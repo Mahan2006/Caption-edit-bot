@@ -1,15 +1,15 @@
-# Infinity Bots
+# @TheStyleKing
 
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.errors import FloodWait
 
 mv_buttons = [[
-        InlineKeyboardButton('💢 Share Our Group 💢', url='http://t.me/share/url?url=Join%20@KannadaFilmsRequests%20To%20Request%20Kannada%20Movies')
+        InlineKeyboardButton('💢 Share Our Group 💢', url='http://t.me/share/url?url=Join%20@KannadaFilmRequests%20To%20Request%20Kannada%20Movies')
     ],[
         InlineKeyboardButton('💢 Other Language Movies 💢', url="t.me/MahanMVGroup")
     ]]
 @Client.on_message(filters.document & filters.channel)
 async def caption(client, message: Message):
-    await message.edit("Nice to meet you Here 💞\n✯ ━━━━━━ ✧ ━━━━━━━ ✯\nShare Our Group.\n✯ ━━━━━━ ✧ ━━━━━━━ ✯\n@KannadaFilmsRequests",
+    await message.edit("Nice to meet you Here 💞\n✯ ━━━━━━ ✧ ━━━━━━━ ✯\nShare Our Group to friend's.\n✯ ━━━━━━ ✧ ━━━━━━━ ✯\n@KannadaFilmRequests",
           reply_markup=InlineKeyboardMarkup(mv_buttons))
