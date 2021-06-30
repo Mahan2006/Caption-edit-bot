@@ -7,9 +7,9 @@ from pyrogram.errors import FloodWait
 mv_buttons = [[
         InlineKeyboardButton('💢 Share Our Group 💢', url='http://t.me/share/url?url=Join%20@KannadaFilmsRequests%20To%20Request%20Kannada%20Movies')
     ],[
-        InlineKeyboardButton('💢 Other Language 💢', url="t.me/MahanMVGroup")
+        InlineKeyboardButton('💢 Other Language Movies 💢', url="t.me/MahanMVGroup")
     ]]
 @Client.on_message(filters.document & filters.channel)
 async def caption(client, message: Message):
-    await message.edit("Nice to meet you Here 💞\n✯ ━━━━━━ ✧ ━━━━━━━ ✯\n@KannadaFilmRequests",
+    await message.edit("Nice to meet you Here 💞\n✯ ━━━━━━ ✧ ━━━━━━━ ✯\nShare Our Group.\n✯ ━━━━━━ ✧ ━━━━━━━ ✯\n@KannadaFilmsRequests",
           reply_markup=InlineKeyboardMarkup(mv_buttons))
